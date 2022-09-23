@@ -4,119 +4,177 @@
     margin: 0;
 }
 
+html{
+    font-size: 20px;
+}
 body{
     font-family:'Roboto', sans-serif;
     background-color: bisque;
+    text-align: center;
+    min-height: 100vh;
 }
 header{
-    width: 100%;
-    height:600px;
-    opacity: 0.7;
-    background-image: url(../img/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 100px;
-
+    display:flex; 
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightsalmon;
 
 }
 
 
-nav ul{
-      background-color: brown;
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-content: flex-end;
-      
-     
+h1{
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: brown;
+    text-shadow: 4px 4px 4px black ;
+
+}
+h2{
+    font-size: 20px;
+    color: green;
+}
+
+.text{
+    font-weight: 900;
+    font-size: 20px;
+    text-align: justify;
+    margin: 2rem;
+}
+.logo img{
+    width: 200px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+
 }
 
 nav a{
     text-decoration: none;
-    font-size:30px ;
-    color: white;
-    margin-right: 20px;
-}
-.contenedor-bienvenida{
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-
-}
-.titulos-h1{
-    color:brown;
-    font-family: 'Poppins';
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 3px 5px 5px black;
-    margin-bottom: 20px;
-}
-.titulos-h2{
-    color: green;
-    font-size: 30px;
-    text-align: center;
-}
-.text{
-    text-align: center;
-    padding: 60px 0;
-    font-size: 20px;
-    margin: 60px 100px 60px 100px;
+    color:white
 }
 
+    
+
+.contenedor-uno img{
+    border-radius: 5%;
+    width: 400px;
+    height: 350px;
+    margin: 1em;
+    
+}
 .contenedor-uno{
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    
-}
-.echeverias{
-    margin-bottom: 20px;
-    border-radius: 10%;
-}
-.lirios{
-    border-radius: 10%;
-
+    align-items: center;  
 }
 
-.galeriaimg img{
-    width: 300px;
+.imagen-nosotros img {
+    border-radius: 5%;
+    width: 400px;
+    height: 350px;
+    margin: 1rem;
 }
-.galeriaimg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.text-footer{
-    color:white;
-}
-footer{
-    background-color: brown;
-    display: flex;
-    justify-content: space-around;
-    align-items: center ;
-    margin-top: 100px;
-    margin-bottom: 40px;
-}
-.formulario-contacto{
-    margin: 60px 300px 60px 60px;
-    width: 300px;
+.imagen-nosotros{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 
 }
-.productos{
+
+.contenedor-footer{
+    display: flex;
+}
+footer{
+    margin-top: 10rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    background-color: lightsalmon;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+@media(min-width:700px){
+    nav ul{
+        display: flex;
+    }
+    nav a{
+        margin-right: 0.5rem;
+    }
+    .contenedor-uno img {
+        width: 300px;
+        height: 250px;
+    }
+    .contenedor-uno{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        
+    }
+    .imagen-nosotros img{
+        width: 300px;
+        height: 250px;
+    }
+    .imagen-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    h1{
+        font-size: 40px;
+        color: black;
+    
+    }
+    h2{
+        font-size: 35px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    }
+    
+
+@media(min-width:1100px){
+   nav ul {
+        font-size: 30px;
+   }
+   .contenedor-uno img{
+    width: 500px;
+    height: 450px;
+   }
+   .imagen-nosotros img{
+    width: 500px;
+    height: 450px;
+   }
+   h1{
+    font-size: 50px;
+   }
+   h2{
+    font-size: 40px;
+   }
+   .text{
     font-size: 30px;
-    list-style-type: none;
-    text-align: center;
-    margin-top: 20px;
+   }
+   .contenedor-uno img:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+   }
+   .imagen-nosotros img:hover {
+    transform: rotate(360deg);
+    transition: all 3s;
 
-}
+   }
+   .logo img:hover{
+    transform:scale(1.1);
+    transition: all 3s;
+   }
+   nav a:hover{
+    color: brown;
+   }
+   }
+
